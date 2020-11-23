@@ -1,0 +1,1 @@
+hello [[name]], the message is: [[ message ]] - this message is [[scope ]]

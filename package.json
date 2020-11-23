@@ -1,0 +1,27 @@
+{
+  "name": "JC-Dev-Node-Package",
+  "version": "1.0.0",
+  "scripts": {
+    "scss": "node-sass --output-style compressed -o css app/resources/sass",
+    "autoprefixer": "postcss -u autoprefixer -r css/*",
+    "lint": "eslint --fix app/resources/js",
+    "uglify": "mkdir -p js && uglifyjs app/resources/js/*.js -c drop_console --mangle toplevel -o  js/js.min.js",
+    "beautify": "mkdir -p js && uglifyjs app/resources/js/*.js -b -o js/js.min.js ",
+    "build-dev": " npm run beautify && npm run scss",
+    "build-release": "npm run lint && npm run uglify && npm run scss"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "autoprefixer": "^9.8.6",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "imagemin-cli": "^5.1.0",
+    "node-sass": "^4.14.1",
+    "onchange": "^2.4.0",
+    "postcss-cli": "^7.1.2",
+    "typescript": "^3.9.7",
+    "uglify-js": "^3.10.4",
+    "vue": "^2.6.12"
+  }
+}

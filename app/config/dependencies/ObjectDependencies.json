@@ -1,0 +1,25 @@
+
+{
+  "controller\\web\\LandingController" : {
+    "CONTROLLER" : true,
+    "EXTENDS": "AbstractClass\\AbstractWebController"
+  },
+
+  "controller\\web\\LostController" : {
+    "CONTROLLER" : true,
+    "EXTENDS": "AbstractClass\\AbstractWebController"
+  },
+  "controller\\web\\RestTestController" : {
+    "CONTROLLER" : true,
+    "EXTENDS": "AbstractClass\\AbstractWebController"
+  },
+
+  "model\\exampleClasses\\ExampleConfigObject" : {
+    "EXTENDS": "model\\object\\config\\JsonConfigObject",
+    "DEPENDENCIES" : {
+
+    },
+    "SINGLETON" : true
+  }
+
+}

@@ -1,0 +1,38 @@
+{
+  "name": "jcdev/mvc_framework",
+  "description": "A basic MVC framework for web/API use - includes basic template system",
+  "license": "proprietary",
+  "type": "library",
+
+  "keywords": ["MVC","framework","API","web"],
+  "authors": [
+    {
+      "name": "James Carr",
+      "email": "james@jamesmcarr.co.uk"
+    }
+  ],
+
+  "require": {
+    "php": "^7.1"
+
+  },
+  "require-dev": {
+    "phpunit/phpunit": "7.0.0"
+
+  },
+
+  "autoload": {
+    "psr-4": {
+      "": "src/",
+      "abstractClass\\": "private/abstractClass",
+      "constants\\": "private/constants",
+      "enum\\": "private/enum",
+      "controller\\": "private/controller",
+      "factory\\": "private/factory",
+      "frontController\\": "private/frontController",
+      "interfaces\\": "private/interfaces",
+      "model\\": "private/model/"
+
+    }
+  }
+}

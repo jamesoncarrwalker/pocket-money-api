@@ -1,0 +1,53 @@
+
+{
+  "404": "web\\Lost",
+  "403": "web\\Forbidden",
+
+  "/" : {
+    "AUTH":{
+      "LOGIN" : "web\\Dashboard"
+    },
+    "REDIRECT":"web\\Landing",
+    "METHOD":"GET"
+  },
+
+  "/login": {
+    "ROUTE": "web\\Landing::post"
+  },
+
+  "/register": "web\\Register",
+
+  "/register/[userId]" : "web\\Register::continueRegistration",
+  "/register/[userId]/interests" : "web\\RegisterInterests",
+  "/register/[userId]/[interests]/[review]" : "web\\ReviewInterests",
+  "/register/[userId]/jam" : "web\\RegisterInterests",
+
+  "/resttest/[name]":"web\\RestTest",
+  "/resttest/[name]/[id]":"web\\RestTest::put",
+
+  "/user": {
+    "AUTH": {
+      "LOGIN": "web\\UserProfile"
+    },
+    "METHOD":"GET"
+  },
+  "/user/[userId]": {
+    "AUTH": {
+      "LOGIN":"web\\UserProfile::viewAs"
+    },
+    "METHOD":"GET"
+  },
+  "/user/friends" : {
+      "AUTH": {
+        "LOGIN":"web\\UserFriends"
+      }
+  },
+  "/user/[userId]/friends": {
+    "AUTH": {
+      "CONNECTED": "web\\Friends::viewAs"
+    },
+    "METHOD":"GET",
+    "REDIRECT":"web\\UserProfile"
+  }
+
+}
