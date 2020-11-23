@@ -5,9 +5,11 @@ use AbstractDAO;
 /**
  * Created by PhpStorm.
  * User: jamesskywalker
- * Date: 10/05/2020
- * Time: 15:29
+ * Date: 23/11/2020
+ * Time: 22:00
  */
-class ExampleDataAccessObject extends AbstractDAO {
+
+class TransactionDAO extends AbstractDAO {
+
 
 }
