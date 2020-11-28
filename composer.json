@@ -23,15 +23,15 @@
 
   "autoload": {
     "psr-4": {
-      "": "src/",
-      "abstractClass\\": "private/abstractClass",
-      "constants\\": "private/constants",
-      "enum\\": "private/enum",
-      "controller\\": "private/controller",
-      "factory\\": "private/factory",
-      "frontController\\": "private/frontController",
-      "interfaces\\": "private/interfaces",
-      "model\\": "private/model/"
+      "": "app/",
+      "abstractClass\\": "framework/abstractClass",
+      "constants\\": "framework/constants",
+      "enum\\": "framework/enum",
+      "controller\\": "framework/controller",
+      "factory\\": "framework/factory",
+      "frontController\\": "framework/frontController",
+      "interfaces\\": "framework/interfaces",
+      "model\\": "framework/model/"
 
     }
   }

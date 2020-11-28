@@ -7,9 +7,9 @@ use abstractClass\AbstractConnectionObject;
  * Date: 23/11/2020
  * Time: 22:11
  */
-class AbstractDAO {
+abstract class AbstractDAO {
 
-    private $conn;
+    protected $conn;
 
     public function __construct(AbstractConnectionObject $conn) {
 
