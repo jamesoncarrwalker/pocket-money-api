@@ -25,7 +25,7 @@ class DataValidator {
         if(count($requiredData) > 0) {
 
             $comparisonArray = array_combine($requiredData,range(1,count($requiredData)));
-            $replacedArray = array_replace($requiredData, $data);
+            $replacedArray = array_replace($comparisonArray, $data);
 
 
             $filteredData = array_intersect_key($replacedArray, $comparisonArray);

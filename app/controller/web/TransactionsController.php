@@ -43,7 +43,6 @@ class TransactionsController extends AbstractWebController{
             $data = DataValidator::getRequiredDataForClassFromArray(self::TRANSACTION_MODEL_FQN, $requestData);
 
             $this->transaction = new Transaction(...array_values($data));
-
             $this->setData('transaction', $this->transactionDao->saveTransaction($this->transaction));
 
 
