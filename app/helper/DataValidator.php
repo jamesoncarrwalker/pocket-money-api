@@ -9,8 +9,6 @@
 namespace helper;
 
 
-use model\helper\DumpVars;
-
 class DataValidator {
 
     public static function checkRequiredDataExists(string $className, array $data) {
