@@ -1,6 +1,6 @@
 
 {
-  "controller\\web\\LandingController" : {
+  "controller\\web\\TransactionsController" : {
     "CONTROLLER" : true,
     "EXTENDS": "AbstractClass\\AbstractWebController"
   },

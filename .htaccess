@@ -1,9 +1,19 @@
 Options -MultiViews
 RewriteEngine On
-RewriteBase /web_framework/
+RewriteBase /pocketmoneytracker/api/
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-l
 
 RewriteRule ^(.+)$ index.php?$1 [QSA,L]
+
+#Options -MultiViews
+#RewriteEngine On
+#RewriteBase /pocketmoneytracker/front-end
+#RewriteRule ^index\.html$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-l
+##  RewriteRule . /index.html [L]
+#RewriteRule ^(.+)$ index.html?$1 [QSA,L]

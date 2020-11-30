@@ -12,10 +12,10 @@
   },
 
   "/login": {
-    "ROUTE": "web\\Landing::post"
+    "ROUTE": "api\\Landing::post"
   },
 
-  "/register": "web\\Register",
+  "/transactions": "web\\Transactions",
 
   "/register/[userId]" : "web\\Register::continueRegistration",
   "/register/[userId]/interests" : "web\\RegisterInterests",

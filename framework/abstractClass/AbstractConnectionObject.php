@@ -25,7 +25,7 @@ abstract class AbstractConnectionObject implements QueryPrepareInterface, QueryR
     protected $charset;
 
     public function __construct(array $connectionVars) {
-        $this->connectionVars = $connectionVars;
+        $this->connectionVars = $connectionVars['MYSQL'] ?? [];
         $this->setConnectionVars();
     }
 
@@ -34,7 +34,7 @@ abstract class AbstractConnectionObject implements QueryPrepareInterface, QueryR
         $this->database = $this->connectionVars['NAME'] ?? false;
         $this->username = $this->connectionVars['USERNAME'] ?? false;
         $this->password = $this->connectionVars['PASSWORD'] ?? false;
-        $this->charset = $this->connectionVars['CHARSET'] ?? false;
+        $this->charset = $this->connectionVars['CHARSET'] ?? null;
     }
 
     public function getConnectionVar(string $var) {
