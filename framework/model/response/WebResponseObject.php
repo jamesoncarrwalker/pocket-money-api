@@ -47,6 +47,7 @@ class WebResponseObject extends AbstractHttpResponseObject {
         //implement the headers you need
         if(!isset($this->templateName)) {
             $this->headers[] = 'Content-Type: application/json';
+            $this->headers[] = 'Access-Control-Allow-Origin: *';
         }
     }
 }
